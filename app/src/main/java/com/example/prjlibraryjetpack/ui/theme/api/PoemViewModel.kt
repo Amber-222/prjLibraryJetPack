@@ -2,10 +2,13 @@ package com.example.prjlibraryjetpack.ui.theme.api
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.prjlibraryjetpack.PoemResponse
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import com.example.prjlibraryjetpack.RetrofitClient
+
+
 
 class PoemViewModel: ViewModel() {
     private val _uiState = MutableStateFlow(PoemScreenState()) //stores the class that contains details about the api requests
