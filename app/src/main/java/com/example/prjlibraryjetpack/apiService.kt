@@ -25,7 +25,7 @@ interface apiService {
 //I think it is because you were missing this object
 
 object RetrofitClient{
-    private const val BASE_URL = "";//"https://opsc.azurewebsites.net/"
+    private const val BASE_URL = "https://poetrydb.org";//"https://opsc.azurewebsites.net/"
 
     val instance: apiService by lazy {
         val retrofit = Retrofit.Builder()
